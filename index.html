@@ -1,27 +1,34 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-      <title>Java1</title
-  </head>
-      <label>Numri i pare</label>
-  <input type="number" id="nr1">
-  <br>
-  
-      <label>Numri i dyte</label>
-   <input type="number" id="nr2">
-  <br>
-     <button types="submit" onclick="sum()">+</button>
-  <p id="result"></p>
-  <script>
-    function sum()
-    {
-      var a=Number(document.getElementById('nr1').value);
-      var b=Number(document.getElementById('nr2').value);
-      var c=a+b;
-      document.getElementById('result').innerHTML=c;
-      
-    }
-      
-  </script>
+    <title>Java1</title>
+</head>
+<body>
+
+    <label>Numri i parë:</label>
+    <input type="number" id="nr1">
+    <br><br>
+
+    <label>Numri i dytë:</label>
+    <input type="number" id="nr2">
+    <br><br>
+
+    <button type="button" onclick="sum()">+</button>
+
+    <p id="result"></p>
+
+    <script>
+        function sum() {
+            var a = Number(document.getElementById("nr1").value);
+            var b = Number(document.getElementById("nr2").value);
+
+            var c = a + b;
+
+            document.getElementById("result").innerHTML = c;
+        }
+    </script>
+
+</body>
 </html>
