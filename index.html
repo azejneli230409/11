@@ -16,6 +16,8 @@
 
     <button type="button" onclick="sum()">Mbledhja (+)</button>
     <button type="button" onclick="zbritje()">Zbritja (-)</button>
+    <button type="button" onclick="shumzimi()">Shumzimi(*)</button>
+    
 
     <p id="result"></p>
 
@@ -36,6 +38,15 @@
             var e = a - b;
 
             document.getElementById('result').innerHTML = e;
+        }
+
+         function shumzimi() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var c = a * b;
+
+            document.getElementById('result').innerHTML = c;
         }
     </script>
 </body>
