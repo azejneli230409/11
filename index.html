@@ -62,15 +62,15 @@
 
             if (b === 0) {
                 document.getElementById("result").innerHTML =
-                    "Gabim: Pjesëtimi me zero nuk lejohet!";
-                return;
+                    "Nuk mund të pjesëtohet me 0!";
+            } else {
+                var p = a / b;
+
+                document.getElementById("result").innerHTML =
+                    "Rezultati i pjesëtimit është: " + p;
             }
-
-            var p = a / b;
-
-            document.getElementById("result").innerHTML =
-                "Rezultati i pjesëtimit është: " + p;
         }
+        
     </script>
 
 </body>
